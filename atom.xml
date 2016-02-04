@@ -4,7 +4,7 @@
   <subtitle><![CDATA[Live and Learn]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://yoursite.com/"/>
-  <updated>2016-01-18T19:10:42.000Z</updated>
+  <updated>2016-02-03T18:41:22.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,10 +15,26 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title><![CDATA[English-Learning]]></title>
+    <link href="http://yoursite.com/2016/02/04/English-Learning/"/>
+    <id>http://yoursite.com/2016/02/04/English-Learning/</id>
+    <published>2016-02-03T18:28:01.000Z</published>
+    <updated>2016-02-03T18:41:22.000Z</updated>
+    <content type="html"><![CDATA[<p>As a non-native English speaker, learning English is currently tough chanllenge. So this post is aimed to record some authentic English expressions inlcuidng both daily and academic words and phrases.</p>
+<a id="more"></a>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>As a non-native English speaker, learning English is currently tough chanllenge. So this post is aimed to record some authentic English expressions inlcuidng both daily and academic words and phrases.</p>]]>
+    
+    </summary>
+    
+  </entry>
+  
+  <entry>
     <title><![CDATA[Hello World]]></title>
-    <link href="http://yoursite.com/2016/01/19/hello-world/"/>
-    <id>http://yoursite.com/2016/01/19/hello-world/</id>
-    <published>2016-01-18T19:10:42.000Z</published>
+    <link href="http://yoursite.com/2016/01/29/hello-world/"/>
+    <id>http://yoursite.com/2016/01/29/hello-world/</id>
+    <published>2016-01-29T11:21:54.000Z</published>
     <updated>2016-01-18T19:10:42.000Z</updated>
     <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
 <h2 id="Quick_Start"><a href="#Quick_Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create_a_new_post"><a href="#Create_a_new_post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
