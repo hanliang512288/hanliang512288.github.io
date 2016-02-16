@@ -4,7 +4,7 @@
   <subtitle><![CDATA[Live and Learn]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://yoursite.com/"/>
-  <updated>2016-02-16T14:15:39.000Z</updated>
+  <updated>2016-02-16T14:20:03.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -19,18 +19,29 @@
     <link href="http://yoursite.com/2016/02/16/interview-review-java/"/>
     <id>http://yoursite.com/2016/02/16/interview-review-java/</id>
     <published>2016-02-16T12:04:33.000Z</published>
-    <updated>2016-02-16T14:15:39.000Z</updated>
+    <updated>2016-02-16T14:20:03.000Z</updated>
     <content type="html"><![CDATA[<h4 id="1-_Java_Vitual_Machine"><a href="#1-_Java_Vitual_Machine" class="headerlink" title="1. Java Vitual Machine"></a>1. Java Vitual Machine</h4><p><strong>High-level language</strong>: human can read, write and understand</p>
 <blockquote>
 <p>Machine language: computer can understand</p>
 </blockquote>
-<p><strong>Low-levle langauge</strong>: machine language or any language similar to machine language</p>
-<p>Compiler: a <em>program</em> that <em>translates</em> a <em>high-level</em> language into <em>low-level</em> language</p>
-<p>Most programming langauge : High-level -&gt; [compiler] -&gt; low-level language (vary on machines)</p>
-<p>Java : High-level -&gt; [Compiler] -&gt; byte code (for JVM)-&gt; [Interpreter]-&gt; machine language</p>
+<p><strong>Low-levle language</strong>: machine language or any language similar to machine language</p>
+<p><strong>Compiler</strong>: a <em>program</em> that <em>translates</em> a <em>high-level</em> language into <em>low-level</em> language</p>
+<a id="more"></a>
+<ul>
+<li><p><strong>Most programming langauge</strong> : High-level -&gt; [compiler] -&gt; low-level language (vary on machines)</p>
+</li>
+<li><p><strong>Java</strong> : High-level -&gt; [Compiler] -&gt; byte code (for JVM)-&gt; [Interpreter]-&gt; machine language</p>
+</li>
+</ul>
 ]]></content>
     <summary type="html">
-    <![CDATA[<h4 id="1-_Java_Vitual_Machine"><a href="#1-_Java_Vitual_Machine" class="headerlink" title="1. Java Vitual Machine"></a>1. Java Vitual Machi]]>
+    <![CDATA[<h4 id="1-_Java_Vitual_Machine"><a href="#1-_Java_Vitual_Machine" class="headerlink" title="1. Java Vitual Machine"></a>1. Java Vitual Machine</h4><p><strong>High-level language</strong>: human can read, write and understand</p>
+<blockquote>
+<p>Machine language: computer can understand</p>
+</blockquote>
+<p><strong>Low-levle language</strong>: machine language or any language similar to machine language</p>
+<p><strong>Compiler</strong>: a <em>program</em> that <em>translates</em> a <em>high-level</em> language into <em>low-level</em> language</p>]]>
+    
     </summary>
     
   </entry>
