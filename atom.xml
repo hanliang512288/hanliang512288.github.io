@@ -4,7 +4,7 @@
   <subtitle><![CDATA[Live and Learn]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://yoursite.com/"/>
-  <updated>2016-02-03T18:41:22.000Z</updated>
+  <updated>2016-02-16T14:15:39.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,16 +15,51 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title><![CDATA[English-Learning]]></title>
-    <link href="http://yoursite.com/2016/02/04/English-Learning/"/>
-    <id>http://yoursite.com/2016/02/04/English-Learning/</id>
-    <published>2016-02-03T18:28:01.000Z</published>
-    <updated>2016-02-03T18:41:22.000Z</updated>
-    <content type="html"><![CDATA[<p>As a non-native English speaker, learning English is currently tough chanllenge. So this post is aimed to record some authentic English expressions inlcuidng both daily and academic words and phrases.</p>
-<a id="more"></a>
+    <title><![CDATA[Interview Review 1 - Java]]></title>
+    <link href="http://yoursite.com/2016/02/16/interview-review-java/"/>
+    <id>http://yoursite.com/2016/02/16/interview-review-java/</id>
+    <published>2016-02-16T12:04:33.000Z</published>
+    <updated>2016-02-16T14:15:39.000Z</updated>
+    <content type="html"><![CDATA[<h4 id="1-_Java_Vitual_Machine"><a href="#1-_Java_Vitual_Machine" class="headerlink" title="1. Java Vitual Machine"></a>1. Java Vitual Machine</h4><p><strong>High-level language</strong>: human can read, write and understand</p>
+<blockquote>
+<p>Machine language: computer can understand</p>
+</blockquote>
+<p><strong>Low-levle langauge</strong>: machine language or any language similar to machine language</p>
+<p>Compiler: a <em>program</em> that <em>translates</em> a <em>high-level</em> language into <em>low-level</em> language</p>
+<p>Most programming langauge : High-level -&gt; [compiler] -&gt; low-level language (vary on machines)</p>
+<p>Java : High-level -&gt; [Compiler] -&gt; byte code (for JVM)-&gt; [Interpreter]-&gt; machine language</p>
 ]]></content>
     <summary type="html">
-    <![CDATA[<p>As a non-native English speaker, learning English is currently tough chanllenge. So this post is aimed to record some authentic English expressions inlcuidng both daily and academic words and phrases.</p>]]>
+    <![CDATA[<h4 id="1-_Java_Vitual_Machine"><a href="#1-_Java_Vitual_Machine" class="headerlink" title="1. Java Vitual Machine"></a>1. Java Vitual Machi]]>
+    </summary>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[How to set up person blog by Hexo]]></title>
+    <link href="http://yoursite.com/2016/02/04/hexo-set-up/"/>
+    <id>http://yoursite.com/2016/02/04/hexo-set-up/</id>
+    <published>2016-02-04T07:20:16.000Z</published>
+    <updated>2016-02-04T07:54:02.000Z</updated>
+    <content type="html"><![CDATA[<p>Hexo is an light weight framework to set up personal blog. Here I am trying to write down the experiences and issues.</p>
+<a id="more"></a>
+<h1 id="1-_Install_Hexo"><a href="#1-_Install_Hexo" class="headerlink" title="1. Install Hexo"></a>1. Install Hexo</h1><p>Installation of hexo is simple. As Hexo depneds on Node.Js. So in Linux (including OSX) </p>
+<h1 id="2-_Pick_and_Modify_a_themme__28landscape-f_29"><a href="#2-_Pick_and_Modify_a_themme__28landscape-f_29" class="headerlink" title="2. Pick and Modify a themme (landscape-f)"></a>2. Pick and Modify a themme (landscape-f)</h1>]]></content>
+    <summary type="html">
+    <![CDATA[<p>Hexo is an light weight framework to set up personal blog. Here I am trying to write down the experiences and issues.</p>]]>
+    
+    </summary>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[English learning note]]></title>
+    <link href="http://yoursite.com/2016/02/04/english-learning/"/>
+    <id>http://yoursite.com/2016/02/04/english-learning/</id>
+    <published>2016-02-04T04:23:25.000Z</published>
+    <updated>2016-02-04T04:24:09.000Z</updated>
+    <content type="html"></content>
+    <summary type="html">
     
     </summary>
     
@@ -53,29 +88,6 @@
 <p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>]]>
     
     </summary>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[hexo-theme]]></title>
-    <link href="http://yoursite.com/2016/01/19/hexo-theme/"/>
-    <id>http://yoursite.com/2016/01/19/hexo-theme/</id>
-    <published>2016-01-18T18:49:02.000Z</published>
-    <updated>2016-01-18T19:02:19.000Z</updated>
-    <content type="html"><![CDATA[<p>This is for test</p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>This is for test</p>
-]]>
-    </summary>
-    
-      <category term="blog" scheme="http://yoursite.com/tags/blog/"/>
-    
-      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
-    
-      <category term="vim" scheme="http://yoursite.com/tags/vim/"/>
-    
-      <category term="Web Development" scheme="http://yoursite.com/categories/Web-Development/"/>
     
   </entry>
   
