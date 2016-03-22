@@ -3,18 +3,18 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Set up person blog by Hexo | Larry Han Website</title>
+  <title>Install Ruby (on Rails), RVM in Ubuntu | Larry Han Website</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Hexo is an light weight framework to set up personal blog. Here I am trying to write down the experiences and issues.">
+  <meta name="description" content="1. RVMThere are many ways we can install ruby in Ubuntu, such as Linuxbrew, apt-get. But here we only suggest one method for the installation and version control of ruby. It is using RVM.">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Set up person blog by Hexo">
-<meta property="og:url" content="http://yoursite.com/2016/02/04/hexo-set-up/index.html">
+<meta property="og:title" content="Install Ruby (on Rails), RVM in Ubuntu">
+<meta property="og:url" content="http://yoursite.com/2016/03/22/install-ruby/index.html">
 <meta property="og:site_name" content="Larry Han Website">
-<meta property="og:description" content="Hexo is an light weight framework to set up personal blog. Here I am trying to write down the experiences and issues.">
-<meta property="og:updated_time" content="2016-02-17T08:02:27.000Z">
+<meta property="og:description" content="1. RVMThere are many ways we can install ruby in Ubuntu, such as Linuxbrew, apt-get. But here we only suggest one method for the installation and version control of ruby. It is using RVM.">
+<meta property="og:updated_time" content="2016-03-22T11:59:49.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Set up person blog by Hexo">
-<meta name="twitter:description" content="Hexo is an light weight framework to set up personal blog. Here I am trying to write down the experiences and issues.">
+<meta name="twitter:title" content="Install Ruby (on Rails), RVM in Ubuntu">
+<meta name="twitter:description" content="1. RVMThere are many ways we can install ruby in Ubuntu, such as Linuxbrew, apt-get. But here we only suggest one method for the installation and version control of ruby. It is using RVM.">
   
     <link rel="alternative" href="/atom.xml" title="Larry Han Website" type="application/atom+xml">
   
@@ -76,11 +76,11 @@
 </header>
 
       <div class="outer">
-        <section id="main"><article id="post-hexo-set-up" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-install-ruby" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     
-<a href="/2016/02/04/hexo-set-up/" class="article-date">
-  <time datetime="2016-02-04T07:20:16.000Z" itemprop="datePublished">2016-02-04</time>
+<a href="/2016/03/22/install-ruby/" class="article-date">
+  <time datetime="2016-03-22T11:23:11.000Z" itemprop="datePublished">2016-03-22</time>
 </a>
 
 
@@ -93,7 +93,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      Set up person blog by Hexo
+      Install Ruby (on Rails), RVM in Ubuntu
     </h1>
   
 
@@ -105,14 +105,37 @@
 		<div id="toc" class="toc-article">
 			<h2 class="toc-title"><span>Contents</span></h2>
 		
-			<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#1-_Install_Hexo"><span class="toc-number">1.</span> <span class="toc-text">1. Install Hexo</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#2-_Pick_and_Modify_a_themme__28landscape-f_29"><span class="toc-number">2.</span> <span class="toc-text">2. Pick and Modify a themme (landscape-f)</span></a></li></ol>
+			<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#1-_RVM"><span class="toc-number">1.</span> <span class="toc-text">1. RVM</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#2-_Ruby_and_ROR"><span class="toc-number">2.</span> <span class="toc-text">2. Ruby and ROR</span></a></li></ol>
 		
 		</div>
 		
-        <p>Hexo is an light weight framework to set up personal blog. Here I am trying to write down the experiences and issues.</p>
+        <h1 id="1-_RVM"><a href="#1-_RVM" class="headerlink" title="1. RVM"></a>1. RVM</h1><p>There are many ways we can install ruby in Ubuntu, such as <a href="https://github.com/Linuxbrew/linuxbrew" target="_blank" rel="external">Linuxbrew</a>, apt-get. But here we only suggest one method for the installation and version control of ruby. It is using RVM.</p>
 <a id="more"></a>
-<h1 id="1-_Install_Hexo"><a href="#1-_Install_Hexo" class="headerlink" title="1. Install Hexo"></a>1. Install Hexo</h1><p>Installation of hexo is simple. As Hexo depneds on Node.Js. So in Linux (including OSX) </p>
-<h1 id="2-_Pick_and_Modify_a_themme__28landscape-f_29"><a href="#2-_Pick_and_Modify_a_themme__28landscape-f_29" class="headerlink" title="2. Pick and Modify a themme (landscape-f)"></a>2. Pick and Modify a themme (landscape-f)</h1><p>My theme is modified based on “[landscape-h]”. Add “linkedin” icon on the menu bar. Also replace<br>the default google search with my swiftype search engine.</p>
+<p>First we need to check if there is <code>curl</code> command in the terminal.</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">dpkg <span class="operator">-s</span> curl</span><br></pre></td></tr></table></figure>
+<p>If the terminal indicates error info, then </p>
+<figure class="highlight actionscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-<span class="keyword">get</span> install curl</span><br></pre></td></tr></table></figure>
+<p>Rvm officially suggests using this command to install RVM,</p>
+<figure class="highlight 1c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl -L get.rvm.io <span class="string">| bash -s stable</span></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>In this step, the terminal may require you to install a key pair. Just follow the notification generated by the previous command</p>
+</blockquote>
+<p>Till now, you have successfully installed the RVM. Please type</p>
+<figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="title">rvm</span> -v</span><br></pre></td></tr></table></figure>
+<p>to see if rvm have successfully installed. In some cases, you may config the <code>~/.bash_profile</code> by adding</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[[ <span class="operator">-s</span> <span class="string">"<span class="variable">$HOME</span>/.rvm/scripts/rvm"</span> ]] &amp;&amp; . <span class="string">"<span class="variable">$HOME</span>/.rvm/scripts/rvm"</span> <span class="comment"># This loads RVM into a shell session.</span></span><br></pre></td></tr></table></figure>
+<p>But normally, this command has already been automatically added into the bash profile.</p>
+<p>Finally, if you are using Ubuntu, you may need to config the <code>Edit</code> -&gt; <code>Profile Preferences</code> -&gt; <code>title and command</code>, click the “Run command as login shell” so that you can install ruby normally. Please refer to <a href="https://rvm.io/integration/gnome-terminal" target="_blank" rel="external">this</a>.</p>
+<h1 id="2-_Ruby_and_ROR"><a href="#2-_Ruby_and_ROR" class="headerlink" title="2. Ruby and ROR"></a>2. Ruby and ROR</h1><p>Using RVM to install Ruby is pretty easy.</p>
+<p>check what ruby is installed by RVM</p>
+<figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rvm <span class="type">list</span></span><br></pre></td></tr></table></figure>
+<p>check what ruby provided by RVM</p>
+<figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rvm <span class="type">list</span> known</span><br></pre></td></tr></table></figure>
+<p>set one version of the Ruby installed as default</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rvm use --<span class="keyword">default</span> ruby-<span class="number">2.2</span><span class="number">.1</span></span><br></pre></td></tr></table></figure>
+<p>Other installation please refer to the <a href="https://ruby-china.org/wiki/rvm-guide" target="_blank" rel="external">official guide</a></p>
+<p><strong>Reference</strong></p>
+<p><a href="http://blog.csdn.net/abbuggy/article/details/8170899" target="_blank" rel="external">http://blog.csdn.net/abbuggy/article/details/8170899</a></p>
 
       
     </div>
@@ -123,9 +146,11 @@
 	  <!-- 百度分享 End -->
 	  
       
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ruby/">ruby</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ruby-on-rails/">ruby on rails</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/rvm/">rvm</a></li></ul>
+
 	  
 <span>
-Updated:<time datetime="2016-02-17T08:02:27.000Z" itemprop="dateModified">2016-02-17</time>
+Updated:<time datetime="2016-03-22T11:59:49.000Z" itemprop="dateModified">2016-03-22</time>
 </span>
 
 
@@ -135,15 +160,11 @@ Updated:<time datetime="2016-02-17T08:02:27.000Z" itemprop="dateModified">2016-0
     
 <nav id="article-nav">
   
-    <a href="/2016/02/16/interview-review-java/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          Interview Review 1 - Java
-        
-      </div>
-    </a>
   
+    <a href="/2016/03/22/vmail-config/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Use vim to receive and send Email</div>
+    </a>
   
 </nav>
 
