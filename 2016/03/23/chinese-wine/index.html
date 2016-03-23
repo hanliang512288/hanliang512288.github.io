@@ -3,18 +3,21 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Uninstall fcitx leads to linux crash | Larry Han Website</title>
+  <title>chinese-wine | Larry Han Website</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Today, I found the the CPU kept occupied by more than 25%. So I was curious maybe some process is out of order which takes up the CPU.">
+  <meta name="description" content="This problem should only occur among those who need Chinese as a second langauge. Please refer to the following links
+http://www.wuwenhui.cn/2692.htmlhttp://blog.sina.com.cn/s/blog_67914f290101a4gj.ht">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Uninstall fcitx leads to linux crash">
-<meta property="og:url" content="http://yoursite.com/2016/03/23/fcitx-linux-crash/index.html">
+<meta property="og:title" content="chinese-wine">
+<meta property="og:url" content="http://yoursite.com/2016/03/23/chinese-wine/index.html">
 <meta property="og:site_name" content="Larry Han Website">
-<meta property="og:description" content="Today, I found the the CPU kept occupied by more than 25%. So I was curious maybe some process is out of order which takes up the CPU.">
-<meta property="og:updated_time" content="2016-03-23T10:35:47.000Z">
+<meta property="og:description" content="This problem should only occur among those who need Chinese as a second langauge. Please refer to the following links
+http://www.wuwenhui.cn/2692.htmlhttp://blog.sina.com.cn/s/blog_67914f290101a4gj.ht">
+<meta property="og:updated_time" content="2016-03-23T10:41:13.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Uninstall fcitx leads to linux crash">
-<meta name="twitter:description" content="Today, I found the the CPU kept occupied by more than 25%. So I was curious maybe some process is out of order which takes up the CPU.">
+<meta name="twitter:title" content="chinese-wine">
+<meta name="twitter:description" content="This problem should only occur among those who need Chinese as a second langauge. Please refer to the following links
+http://www.wuwenhui.cn/2692.htmlhttp://blog.sina.com.cn/s/blog_67914f290101a4gj.ht">
   
     <link rel="alternative" href="/atom.xml" title="Larry Han Website" type="application/atom+xml">
   
@@ -76,19 +79,15 @@
 </header>
 
       <div class="outer">
-        <section id="main"><article id="post-fcitx-linux-crash" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-chinese-wine" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     
-<a href="/2016/03/23/fcitx-linux-crash/" class="article-date">
-  <time datetime="2016-03-23T10:05:49.000Z" itemprop="datePublished">2016-03-23</time>
+<a href="/2016/03/23/chinese-wine/" class="article-date">
+  <time datetime="2016-03-23T10:36:42.000Z" itemprop="datePublished">2016-03-23</time>
 </a>
 
 
     
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/Linux/">Linux</a>
-  </div>
-
   </div>
   <div class="article-inner">
     
@@ -97,7 +96,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      Uninstall fcitx leads to linux crash
+      chinese-wine
     </h1>
   
 
@@ -113,26 +112,8 @@
 		
 		</div>
 		
-        <p>Today, I found the the CPU kept occupied by more than 25%. So I was curious maybe some process is out of order which takes up the CPU.</p>
-<a id="more"></a>
-<p>So I open the “System Monitor” and check the status of processes, where I found <code>fcitx</code> was taking up 25% of the CPU. I installed “sogou-pinyin” input when I used Ubuntu at first. Maybe fcitx causes the high occupancy of CPU. So I go to <code>Ubuntu Software Centre</code> seaching “fcitx” and uninstalling it.</p>
-<blockquote>
-<p>“fcitx” (Flexible Input Method Framework) is a input framework which potentially replaces the default “ibus”.</p>
-</blockquote>
-<p>But unfortuantely, uninstallling fcitx may lead the crash of Linux. After I restart system, I try to type in the password but it is weired to jump back to the login interface again. I tried many times, but all failed.</p>
-<p>So I searched on Google and luckily find some other user came across the same issue with me.</p>
-<p><strong>Solution</strong></p>
-<p>After system is booted, press</p>
-<figure class="highlight armasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="label">Ctrl</span> + Alt + <span class="literal">F1</span></span><br></pre></td></tr></table></figure>
-<p>If system is loggged in, input will be auto-loaded. But using software centre can not remove sogou completely.</p>
-<figure class="highlight stata"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">cd</span> /etc/X11/Xsession.<span class="keyword">d</span>   ---- <span class="keyword">log</span> <span class="keyword">in</span> to Xsession.<span class="keyword">d</span> folder</span><br><span class="line">sudo <span class="keyword">rm</span> -f 72sogoupinyin  ---- delete the configuration of <span class="string">"sogou"</span></span><br><span class="line">sudo <span class="keyword">rm</span>-rf /etc/X11/xinit/xinput.<span class="keyword">d</span>/fcitx ----delete xinput.<span class="keyword">d</span> under fcitx folder</span><br></pre></td></tr></table></figure>
-<p>after finishing these, press </p>
-<figure class="highlight armasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="label">Ctrl</span> + Alt + <span class="literal">F7</span></span><br></pre></td></tr></table></figure>
-<p>to switch back to the login interface.</p>
-<p>If all above do not work, you may need continue trying following command,</p>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get <span class="operator"><span class="keyword">purge</span> sogoupinyin <span class="comment">----clean sogoupinyin configuration file</span></span><br><span class="line">sudo apt-<span class="keyword">get</span> <span class="keyword">purge</span> fcitx <span class="comment">-----clean fcitx configuration</span></span></span><br></pre></td></tr></table></figure>
-<p>Finishing all these, your system will go back to normal.</p>
-<p><strong>Reference</strong><br><a href="http://www.cooders.net/programming-development/466.html" target="_blank" rel="external">http://www.cooders.net/programming-development/466.html</a></p>
+        <p>This problem should only occur among those who need Chinese as a second langauge. Please refer to the following links</p>
+<p><a href="http://www.wuwenhui.cn/2692.html" target="_blank" rel="external">http://www.wuwenhui.cn/2692.html</a><br><a href="http://blog.sina.com.cn/s/blog_67914f290101a4gj.html" target="_blank" rel="external">http://blog.sina.com.cn/s/blog_67914f290101a4gj.html</a><br><a href="http://hi.baidu.com/bziji/item/e3267debbbaa850d64db00d8" target="_blank" rel="external">http://hi.baidu.com/bziji/item/e3267debbbaa850d64db00d8</a></p>
 
       
     </div>
@@ -143,11 +124,9 @@
 	  <!-- 百度分享 End -->
 	  
       
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Ubuntu/">Ubuntu</a></li></ul>
-
 	  
 <span>
-Updated:<time datetime="2016-03-23T10:35:47.000Z" itemprop="dateModified">2016-03-23</time>
+Updated:<time datetime="2016-03-23T10:41:13.000Z" itemprop="dateModified">2016-03-23</time>
 </span>
 
 
@@ -157,19 +136,10 @@ Updated:<time datetime="2016-03-23T10:35:47.000Z" itemprop="dateModified">2016-0
     
 <nav id="article-nav">
   
-    <a href="/2016/03/23/chinese-wine/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          chinese-wine
-        
-      </div>
-    </a>
   
-  
-    <a href="/2016/03/23/ocaml-install/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2016/03/23/fcitx-linux-crash/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">How to install OCaml and Utop with Opam</div>
+      <div class="article-nav-title">Uninstall fcitx leads to linux crash</div>
     </a>
   
 </nav>
