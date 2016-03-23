@@ -3,17 +3,24 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Tag: datastructure | Larry Han Website</title>
+  <title>How to install OCaml and Utop | Larry Han Website</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Larry Han Website">
-<meta property="og:url" content="http://yoursite.com/tags/datastructure/index.html">
+  <meta name="description" content="Installing Ocaml is easy on Ubuntu, but there are some errors on the official guide website.
+Install Opam
+The OCaml is integrated in the Opam. We can also use Opam in the version management of OCmal.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="How to install OCaml and Utop">
+<meta property="og:url" content="http://yoursite.com/2016/03/23/ocaml-install/index.html">
 <meta property="og:site_name" content="Larry Han Website">
-<meta property="og:description">
+<meta property="og:description" content="Installing Ocaml is easy on Ubuntu, but there are some errors on the official guide website.
+Install Opam
+The OCaml is integrated in the Opam. We can also use Opam in the version management of OCmal.">
+<meta property="og:updated_time" content="2016-03-23T09:56:51.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Larry Han Website">
-<meta name="twitter:description">
+<meta name="twitter:title" content="How to install OCaml and Utop">
+<meta name="twitter:description" content="Installing Ocaml is easy on Ubuntu, but there are some errors on the official guide website.
+Install Opam
+The OCaml is integrated in the Opam. We can also use Opam in the version management of OCmal.">
   
     <link rel="alternative" href="/atom.xml" title="Larry Han Website" type="application/atom+xml">
   
@@ -75,43 +82,90 @@
 </header>
 
       <div class="outer">
-        <section id="main">
-  
-  
+        <section id="main"><article id="post-ocaml-install" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2016" class="archive-year">2016</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      
-<a href="/2016/02/17/interview-review2-algorithms-datastructure/" class="archive-article-date">
-  <time datetime="2016-02-17T12:00:31.000Z" itemprop="datePublished">Feb 17</time>
+<a href="/2016/03/23/ocaml-install/" class="article-date">
+  <time datetime="2016-03-23T06:06:52.000Z" itemprop="datePublished">2016-03-23</time>
 </a>
 
 
-      
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/02/17/interview-review2-algorithms-datastructure/">interview-review2-algorithms-datastructure</a>
+    <h1 class="article-title" itemprop="name">
+      How to install OCaml and Utop
     </h1>
   
 
-    </header>
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+		
+		<div id="toc" class="toc-article">
+			<h2 class="toc-title"><span>Contents</span></h2>
+		
+			
+		
+		</div>
+		
+        <p>Installing Ocaml is easy on Ubuntu, but there are some errors on the official guide website.</p>
+<p><strong>Install Opam</strong></p>
+<p>The OCaml is integrated in the Opam. We can also use Opam in the version management of OCmal. The command of installation of Opam is</p>
+<figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">add</span>-apt-repository --yes <span class="keyword">pp</span><span class="variable">a:avsm</span>/ppa</span><br><span class="line">apt-<span class="built_in">get</span> <span class="keyword">update</span> -qq</span><br><span class="line">apt-<span class="built_in">get</span> install -<span class="keyword">y</span> opam</span><br></pre></td></tr></table></figure>
+<p>The following step is a little different from the official guide, we need to initialize the Opam using</p>
+<figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="title">opam</span> init</span><br></pre></td></tr></table></figure>
+<p>After this, the terminal will notify you to config the <code>~/.bash_profile</code> and <code>~/.ocamlinit</code>. Now you can type the following command,</p>
+<figure class="highlight mel"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">eval</span> <span class="variable">$(</span>opam config <span class="keyword">env</span>)</span><br></pre></td></tr></table></figure>
+<p><strong>Install Utop</strong></p>
+<p>Once finsh installing and initialize Opam, we can use Opam to install “Utop”. </p>
+<figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">opam <span class="keyword">install</span> utop</span><br></pre></td></tr></table></figure>
+<p>Utop is an advanced shell progrmming environment for Ocaml.</p>
+<p><strong>Reference</strong><br><a href="https://opam.ocaml.org/blog/about-utop/" target="_blank" rel="external">https://opam.ocaml.org/blog/about-utop/</a><br><a href="https://ocaml.org/docs/install.html" target="_blank" rel="external">https://ocaml.org/docs/install.html</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+	  
+	  <!-- 百度分享 Start -->
+	  <div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a><a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a></div>
+	  <!-- 百度分享 End -->
+	  
+      
+	  
+<span>
+Updated:<time datetime="2016-03-23T09:56:51.000Z" itemprop="dateModified">2016-03-23</time>
+</span>
+
+
+    </footer>
   </div>
-</article>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2016/03/22/install-ruby/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Install Ruby (on Rails), RVM in Ubuntu</div>
+    </a>
+  
+</nav>
 
   
-  
-    </div></section>
-  
+</article>
+
+
+
+<!-- 多说评论框 start -->
+
+<!-- 多说评论框 end -->
 </section>
         
           
@@ -250,6 +304,8 @@
 <!-- 多说公共JS代码 end -->
 
 <!-- 百度分享 start -->
+
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":["mshare","douban","bdysc","sqq","qq","hi","baidu","huaban","youdao","sdo","mail","xg","diandian","fx","copy","print"],"bdPic":"","bdStyle":"1","bdSize":"16"},"share":{},"image":{"viewList":["qzone","tsina","tqq","renren","weixin"],"viewText":"分享到：","viewSize":"16"}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
 
 <!-- 百度分享 end -->
 
