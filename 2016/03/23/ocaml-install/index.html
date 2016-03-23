@@ -6,21 +6,18 @@
   <title>How to install OCaml and Utop | Larry Han Website</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="Installing Ocaml is easy on Ubuntu, but there are some errors on the official guide website.
-Install Opam
-The OCaml is integrated in the Opam. We can also use Opam in the version management of OCmal.">
+Install OpamThe OCaml is integrated in the Opam. We can also use Opam in the version management of OCmal. T">
 <meta property="og:type" content="article">
 <meta property="og:title" content="How to install OCaml and Utop">
 <meta property="og:url" content="http://yoursite.com/2016/03/23/ocaml-install/index.html">
 <meta property="og:site_name" content="Larry Han Website">
 <meta property="og:description" content="Installing Ocaml is easy on Ubuntu, but there are some errors on the official guide website.
-Install Opam
-The OCaml is integrated in the Opam. We can also use Opam in the version management of OCmal.">
-<meta property="og:updated_time" content="2016-03-23T09:56:51.000Z">
+Install OpamThe OCaml is integrated in the Opam. We can also use Opam in the version management of OCmal. T">
+<meta property="og:updated_time" content="2016-03-23T09:58:55.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="How to install OCaml and Utop">
 <meta name="twitter:description" content="Installing Ocaml is easy on Ubuntu, but there are some errors on the official guide website.
-Install Opam
-The OCaml is integrated in the Opam. We can also use Opam in the version management of OCmal.">
+Install OpamThe OCaml is integrated in the Opam. We can also use Opam in the version management of OCmal. T">
   
     <link rel="alternative" href="/atom.xml" title="Larry Han Website" type="application/atom+xml">
   
@@ -111,20 +108,18 @@ The OCaml is integrated in the Opam. We can also use Opam in the version managem
 		<div id="toc" class="toc-article">
 			<h2 class="toc-title"><span>Contents</span></h2>
 		
-			
+			<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Install_Opam"><span class="toc-number">1.</span> <span class="toc-text">Install Opam</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Install_Utop"><span class="toc-number">2.</span> <span class="toc-text">Install Utop</span></a></li></ol>
 		
 		</div>
 		
         <p>Installing Ocaml is easy on Ubuntu, but there are some errors on the official guide website.</p>
-<p><strong>Install Opam</strong></p>
-<p>The OCaml is integrated in the Opam. We can also use Opam in the version management of OCmal. The command of installation of Opam is</p>
+<h1 id="Install_Opam"><a href="#Install_Opam" class="headerlink" title="Install Opam"></a>Install Opam</h1><p>The OCaml is integrated in the Opam. We can also use Opam in the version management of OCmal. The command of installation of Opam is</p>
 <figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">add</span>-apt-repository --yes <span class="keyword">pp</span><span class="variable">a:avsm</span>/ppa</span><br><span class="line">apt-<span class="built_in">get</span> <span class="keyword">update</span> -qq</span><br><span class="line">apt-<span class="built_in">get</span> install -<span class="keyword">y</span> opam</span><br></pre></td></tr></table></figure>
 <p>The following step is a little different from the official guide, we need to initialize the Opam using</p>
 <figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="title">opam</span> init</span><br></pre></td></tr></table></figure>
 <p>After this, the terminal will notify you to config the <code>~/.bash_profile</code> and <code>~/.ocamlinit</code>. Now you can type the following command,</p>
 <figure class="highlight mel"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">eval</span> <span class="variable">$(</span>opam config <span class="keyword">env</span>)</span><br></pre></td></tr></table></figure>
-<p><strong>Install Utop</strong></p>
-<p>Once finsh installing and initialize Opam, we can use Opam to install “Utop”. </p>
+<h1 id="Install_Utop"><a href="#Install_Utop" class="headerlink" title="Install Utop"></a>Install Utop</h1><p>Once finsh installing and initialize Opam, we can use Opam to install “Utop”. </p>
 <figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">opam <span class="keyword">install</span> utop</span><br></pre></td></tr></table></figure>
 <p>Utop is an advanced shell progrmming environment for Ocaml.</p>
 <p><strong>Reference</strong><br><a href="https://opam.ocaml.org/blog/about-utop/" target="_blank" rel="external">https://opam.ocaml.org/blog/about-utop/</a><br><a href="https://ocaml.org/docs/install.html" target="_blank" rel="external">https://ocaml.org/docs/install.html</a></p>
@@ -138,9 +133,11 @@ The OCaml is integrated in the Opam. We can also use Opam in the version managem
 	  <!-- 百度分享 End -->
 	  
       
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/OCaml/">OCaml</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Opam/">Opam</a></li></ul>
+
 	  
 <span>
-Updated:<time datetime="2016-03-23T09:56:51.000Z" itemprop="dateModified">2016-03-23</time>
+Updated:<time datetime="2016-03-23T09:58:55.000Z" itemprop="dateModified">2016-03-23</time>
 </span>
 
 
@@ -205,7 +202,7 @@ Updated:<time datetime="2016-03-23T09:56:51.000Z" itemprop="dateModified">2016-0
   <div class="widget-wrap">
     <h3 class="widget-title">Tags</h3>
     <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/algorithms/">algorithms</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/datastructure/">datastructure</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ruby/">ruby</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ruby-on-rails/">ruby on rails</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/rvm/">rvm</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ubuntu/">ubuntu</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/vim/">vim</a><span class="tag-list-count">1</span></li></ul>
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/OCaml/">OCaml</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Opam/">Opam</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/algorithms/">algorithms</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/datastructure/">datastructure</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ruby/">ruby</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ruby-on-rails/">ruby on rails</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/rvm/">rvm</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ubuntu/">ubuntu</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/vim/">vim</a><span class="tag-list-count">1</span></li></ul>
     </div>
   </div>
 
@@ -215,7 +212,7 @@ Updated:<time datetime="2016-03-23T09:56:51.000Z" itemprop="dateModified">2016-0
   <div class="widget-wrap">
     <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
-      <a href="/tags/algorithms/" style="font-size: 13px; color: #7dc3de">algorithms</a> <a href="/tags/datastructure/" style="font-size: 13px; color: #7dc3de">datastructure</a> <a href="/tags/ruby/" style="font-size: 13px; color: #7dc3de">ruby</a> <a href="/tags/ruby-on-rails/" style="font-size: 13px; color: #7dc3de">ruby on rails</a> <a href="/tags/rvm/" style="font-size: 13px; color: #7dc3de">rvm</a> <a href="/tags/ubuntu/" style="font-size: 13px; color: #7dc3de">ubuntu</a> <a href="/tags/vim/" style="font-size: 13px; color: #7dc3de">vim</a>
+      <a href="/tags/OCaml/" style="font-size: 13px; color: #7dc3de">OCaml</a> <a href="/tags/Opam/" style="font-size: 13px; color: #7dc3de">Opam</a> <a href="/tags/algorithms/" style="font-size: 13px; color: #7dc3de">algorithms</a> <a href="/tags/datastructure/" style="font-size: 13px; color: #7dc3de">datastructure</a> <a href="/tags/ruby/" style="font-size: 13px; color: #7dc3de">ruby</a> <a href="/tags/ruby-on-rails/" style="font-size: 13px; color: #7dc3de">ruby on rails</a> <a href="/tags/rvm/" style="font-size: 13px; color: #7dc3de">rvm</a> <a href="/tags/ubuntu/" style="font-size: 13px; color: #7dc3de">ubuntu</a> <a href="/tags/vim/" style="font-size: 13px; color: #7dc3de">vim</a>
     </div>
   </div>
 

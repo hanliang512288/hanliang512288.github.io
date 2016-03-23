@@ -106,20 +106,18 @@
 		<div id="toc" class="toc-article">
 			<h2 class="toc-title"><span>Contents</span></h2>
 		
-			
+			<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Install_Opam"><span class="toc-number">1.</span> <span class="toc-text">Install Opam</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Install_Utop"><span class="toc-number">2.</span> <span class="toc-text">Install Utop</span></a></li></ol>
 		
 		</div>
 		
         <p>Installing Ocaml is easy on Ubuntu, but there are some errors on the official guide website.</p>
-<p><strong>Install Opam</strong></p>
-<p>The OCaml is integrated in the Opam. We can also use Opam in the version management of OCmal. The command of installation of Opam is</p>
+<h1 id="Install_Opam"><a href="#Install_Opam" class="headerlink" title="Install Opam"></a>Install Opam</h1><p>The OCaml is integrated in the Opam. We can also use Opam in the version management of OCmal. The command of installation of Opam is</p>
 <figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">add</span>-apt-repository --yes <span class="keyword">pp</span><span class="variable">a:avsm</span>/ppa</span><br><span class="line">apt-<span class="built_in">get</span> <span class="keyword">update</span> -qq</span><br><span class="line">apt-<span class="built_in">get</span> install -<span class="keyword">y</span> opam</span><br></pre></td></tr></table></figure>
 <p>The following step is a little different from the official guide, we need to initialize the Opam using</p>
 <figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="title">opam</span> init</span><br></pre></td></tr></table></figure>
 <p>After this, the terminal will notify you to config the <code>~/.bash_profile</code> and <code>~/.ocamlinit</code>. Now you can type the following command,</p>
 <figure class="highlight mel"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">eval</span> <span class="variable">$(</span>opam config <span class="keyword">env</span>)</span><br></pre></td></tr></table></figure>
-<p><strong>Install Utop</strong></p>
-<p>Once finsh installing and initialize Opam, we can use Opam to install “Utop”. </p>
+<h1 id="Install_Utop"><a href="#Install_Utop" class="headerlink" title="Install Utop"></a>Install Utop</h1><p>Once finsh installing and initialize Opam, we can use Opam to install “Utop”. </p>
 <figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">opam <span class="keyword">install</span> utop</span><br></pre></td></tr></table></figure>
 <p>Utop is an advanced shell progrmming environment for Ocaml.</p>
 <p><strong>Reference</strong><br><a href="https://opam.ocaml.org/blog/about-utop/" target="_blank" rel="external">https://opam.ocaml.org/blog/about-utop/</a><br><a href="https://ocaml.org/docs/install.html" target="_blank" rel="external">https://ocaml.org/docs/install.html</a></p>
@@ -128,15 +126,17 @@
     </div>
     <footer class="article-footer">
 	  
-	  <a data-url="http://yoursite.com/2016/03/23/ocaml-install/" data-id="cim4oem0r0007kr9gg76au19d" data_title="How to install OCaml and Utop" data_summary="Installing Ocaml is easy on..." class="article-share-link">Share</a>
+	  <a data-url="http://yoursite.com/2016/03/23/ocaml-install/" data-id="cim4ohi3h0007lt9g29hxqj49" data_title="How to install OCaml and Utop" data_summary="Installing Ocaml is easy on..." class="article-share-link">Share</a>
       
 
       
 	  
       
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/OCaml/">OCaml</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Opam/">Opam</a></li></ul>
+
 	  
 <span>
-Updated:<time datetime="2016-03-23T09:56:51.000Z" itemprop="dateModified">2016-03-23</time>
+Updated:<time datetime="2016-03-23T09:58:55.000Z" itemprop="dateModified">2016-03-23</time>
 </span>
 
 
@@ -187,7 +187,7 @@ Updated:<time datetime="2016-03-23T09:56:51.000Z" itemprop="dateModified">2016-0
     </div>
     <footer class="article-footer">
 	  
-	  <a data-url="http://yoursite.com/2016/03/22/install-ruby/" data-id="cim4oem0v000gkr9gqxilt0gn" data_title="Install Ruby (on Rails), RVM in Ubuntu" data_summary="1. RVMThere are many ways w..." class="article-share-link">Share</a>
+	  <a data-url="http://yoursite.com/2016/03/22/install-ruby/" data-id="cim4ohi3m000klt9gfk7cjqis" data_title="Install Ruby (on Rails), RVM in Ubuntu" data_summary="1. RVMThere are many ways w..." class="article-share-link">Share</a>
       
 
       
@@ -249,7 +249,7 @@ Updated:<time datetime="2016-03-22T11:59:49.000Z" itemprop="dateModified">2016-0
     </div>
     <footer class="article-footer">
 	  
-	  <a data-url="http://yoursite.com/2016/03/22/vmail-config/" data-id="cim4oem0e0001kr9glt8ia1t2" data_title="Set Vim to send and receive Email" data_summary="Using vim to send and recei..." class="article-share-link">Share</a>
+	  <a data-url="http://yoursite.com/2016/03/22/vmail-config/" data-id="cim4ohi340001lt9gmo4mpou8" data_title="Set Vim to send and receive Email" data_summary="Using vim to send and recei..." class="article-share-link">Share</a>
       
 
       
@@ -323,7 +323,7 @@ Updated:<time datetime="2016-03-22T12:02:31.000Z" itemprop="dateModified">2016-0
     </div>
     <footer class="article-footer">
 	  
-	  <a data-url="http://yoursite.com/2016/03/22/remove-red-triangle/" data-id="cim4oem0j0004kr9gweeu22a7" data_title="Remove Red Triangle From Status Bar Ubuntu" data_summary="A red triangle frequently o..." class="article-share-link">Share</a>
+	  <a data-url="http://yoursite.com/2016/03/22/remove-red-triangle/" data-id="cim4ohi390004lt9gkqf5mhm6" data_title="Remove Red Triangle From Status Bar Ubuntu" data_summary="A red triangle frequently o..." class="article-share-link">Share</a>
       
 
       
@@ -394,7 +394,7 @@ Updated:<time datetime="2016-03-22T12:01:40.000Z" itemprop="dateModified">2016-0
     </div>
     <footer class="article-footer">
 	  
-	  <a data-url="http://yoursite.com/2016/02/17/interview-review2-algorithms-datastructure/" data-id="cim4oem0t0008kr9gkxvl2v9e" data_title="interview-review2-algorithms-datastructure" data_summary="1. Datastructure1.1 Primiti..." class="article-share-link">Share</a>
+	  <a data-url="http://yoursite.com/2016/02/17/interview-review2-algorithms-datastructure/" data-id="cim4ohi3j000clt9g9cvyl8vp" data_title="interview-review2-algorithms-datastructure" data_summary="1. Datastructure1.1 Primiti..." class="article-share-link">Share</a>
       
 
       
@@ -458,7 +458,7 @@ Updated:<time datetime="2016-02-18T14:24:00.000Z" itemprop="dateModified">2016-0
     </div>
     <footer class="article-footer">
 	  
-	  <a data-url="http://yoursite.com/2016/02/16/interview-review-java/" data-id="cim4oem0u000fkr9glstidokp" data_title="Interview Review 1 - Java" data_summary="1. Java Vitual MachineHigh-..." class="article-share-link">Share</a>
+	  <a data-url="http://yoursite.com/2016/02/16/interview-review-java/" data-id="cim4ohi3l000jlt9guif5wje9" data_title="Interview Review 1 - Java" data_summary="1. Java Vitual MachineHigh-..." class="article-share-link">Share</a>
       
 
       
@@ -517,7 +517,7 @@ Updated:<time datetime="2016-02-17T08:18:55.000Z" itemprop="dateModified">2016-0
     </div>
     <footer class="article-footer">
 	  
-	  <a data-url="http://yoursite.com/2016/02/04/hexo-set-up/" data-id="cim4oem0x000nkr9g71xsq7t1" data_title="Set up person blog by Hexo" data_summary="Hexo is an light weight fra..." class="article-share-link">Share</a>
+	  <a data-url="http://yoursite.com/2016/02/04/hexo-set-up/" data-id="cim4ohi3p000rlt9gxk6hsxkh" data_title="Set up person blog by Hexo" data_summary="Hexo is an light weight fra..." class="article-share-link">Share</a>
       
 
       
@@ -581,7 +581,7 @@ Updated:<time datetime="2016-02-17T08:02:27.000Z" itemprop="dateModified">2016-0
   <div class="widget-wrap">
     <h3 class="widget-title">Tags</h3>
     <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/algorithms/">algorithms</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/datastructure/">datastructure</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ruby/">ruby</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ruby-on-rails/">ruby on rails</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/rvm/">rvm</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ubuntu/">ubuntu</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/vim/">vim</a><span class="tag-list-count">1</span></li></ul>
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/OCaml/">OCaml</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Opam/">Opam</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/algorithms/">algorithms</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/datastructure/">datastructure</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ruby/">ruby</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ruby-on-rails/">ruby on rails</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/rvm/">rvm</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/ubuntu/">ubuntu</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/vim/">vim</a><span class="tag-list-count">1</span></li></ul>
     </div>
   </div>
 
@@ -591,7 +591,7 @@ Updated:<time datetime="2016-02-17T08:02:27.000Z" itemprop="dateModified">2016-0
   <div class="widget-wrap">
     <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
-      <a href="/tags/algorithms/" style="font-size: 13px; color: #7dc3de">algorithms</a> <a href="/tags/datastructure/" style="font-size: 13px; color: #7dc3de">datastructure</a> <a href="/tags/ruby/" style="font-size: 13px; color: #7dc3de">ruby</a> <a href="/tags/ruby-on-rails/" style="font-size: 13px; color: #7dc3de">ruby on rails</a> <a href="/tags/rvm/" style="font-size: 13px; color: #7dc3de">rvm</a> <a href="/tags/ubuntu/" style="font-size: 13px; color: #7dc3de">ubuntu</a> <a href="/tags/vim/" style="font-size: 13px; color: #7dc3de">vim</a>
+      <a href="/tags/OCaml/" style="font-size: 13px; color: #7dc3de">OCaml</a> <a href="/tags/Opam/" style="font-size: 13px; color: #7dc3de">Opam</a> <a href="/tags/algorithms/" style="font-size: 13px; color: #7dc3de">algorithms</a> <a href="/tags/datastructure/" style="font-size: 13px; color: #7dc3de">datastructure</a> <a href="/tags/ruby/" style="font-size: 13px; color: #7dc3de">ruby</a> <a href="/tags/ruby-on-rails/" style="font-size: 13px; color: #7dc3de">ruby on rails</a> <a href="/tags/rvm/" style="font-size: 13px; color: #7dc3de">rvm</a> <a href="/tags/ubuntu/" style="font-size: 13px; color: #7dc3de">ubuntu</a> <a href="/tags/vim/" style="font-size: 13px; color: #7dc3de">vim</a>
     </div>
   </div>
 
