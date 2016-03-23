@@ -158,7 +158,7 @@ body,
 }
 body {
   background: url("http://fh-1.qiniudn.com/bg.png") #eee;
-  font: 14px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: 16px "Helvetica Neue", Helvetica, Arial, sans-serif;
   -webkit-text-size-adjust: 100%;
 }
 .outer {
@@ -343,7 +343,7 @@ body {
   font-weight: bold;
 }
 #header {
-  height: 280px;
+  height: 180px;
   position: relative;
   border-bottom: 1px solid #ddd;
   -webkit-box-shadow: 2px 4px 5px rgba(3,3,3,0.2);
@@ -680,7 +680,7 @@ a.article-title:hover {
   margin-left: 45px;
 }
 .article-entry blockquote footer {
-  font-size: 14px;
+  font-size: 16px;
   margin: 1.6em 0;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -1196,7 +1196,7 @@ a.article-title:hover {
   border-width: 1px 0;
   overflow: auto;
   color: #ccc;
-  line-height: 22.400000000000002px;
+  line-height: 25.6px;
 }
 .article-entry .highlight .gutter pre,
 .article-entry .gist .gist-file .gist-data .line-numbers {
@@ -1252,7 +1252,7 @@ a.article-title:hover {
   padding-right: 20px;
 }
 .article-entry .highlight .line {
-  height: 22.400000000000002px;
+  height: 25.6px;
 }
 .article-entry .gist {
   margin: 0 -1.2em;
@@ -1843,7 +1843,7 @@ pre .javascript .function {
   -webkit-border-radius: 3px;
   padding: 4px 5px;
   line-height: 16px;
-  font-size: 14px;
+  font-size: 16px;
 }
 .tag-list-link:hover,
 .archive-list-link:hover,
