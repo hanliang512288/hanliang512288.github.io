@@ -103,13 +103,13 @@
     <div class="article-entry" itemprop="articleBody">
       
 		
-        <h1 id="1-_Create_Table"><a href="#1-_Create_Table" class="headerlink" title="1. Create Table"></a>1. Create Table</h1><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">\begin&#123;table&#125;[ht]&#10;\centering&#10;\begin&#123;tabular&#125;&#123; l  l p&#123;8cm&#125;&#125; % use p to control the width (if there is a &#34;|&#34; then add vertical line)&#10;\hline % draw a line between row&#10;.....&#10;\end&#123;tabular&#125;&#10;\caption&#123;The dialogue act (DA) tagset proposed by XXX&#125; % table name&#10;\end&#123;table&#125;</span><br></pre></td></tr></table></figure>
+        <h1 id="1-_Create_Table"><a href="#1-_Create_Table" class="headerlink" title="1. Create Table"></a>1. Create Table</h1><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">\<span class="operator"><span class="keyword">begin</span>&#123;<span class="keyword">table</span>&#125;[ht]</span><br><span class="line">\centering</span><br><span class="line">\<span class="keyword">begin</span>&#123;tabular&#125;&#123; <span class="keyword">l</span>  <span class="keyword">l</span> <span class="keyword">p</span>&#123;<span class="number">8</span>cm&#125;&#125; % <span class="keyword">use</span> <span class="keyword">p</span> <span class="keyword">to</span> control the width (<span class="keyword">if</span> there <span class="keyword">is</span> a <span class="string">"|"</span> <span class="keyword">then</span> <span class="keyword">add</span> vertical line)</span><br><span class="line">\hline % draw a line <span class="keyword">between</span> <span class="keyword">row</span></span><br><span class="line">....</span><br><span class="line">\<span class="keyword">end</span>&#123;tabular&#125;</span><br><span class="line">\caption&#123;The dialogue act (DA) tagset proposed <span class="keyword">by</span> XXX&#125; % <span class="keyword">table</span> <span class="keyword">name</span></span><br><span class="line">\<span class="keyword">end</span>&#123;<span class="keyword">table</span>&#125;</span></span><br></pre></td></tr></table></figure>
 
       
     </div>
     <footer class="article-footer">
 	  
-	  <a data-url="http://yoursite.com/2016/05/19/latex-cheetsheet/" data-id="ciod241hw000nym9g7qb1tese" data_title="latex-cheetsheet" data_summary="1. Create Table1\begin&#123..." class="article-share-link">Share</a>
+	  <a data-url="http://yoursite.com/2016/05/19/latex-cheetsheet/" data-id="ciod288au000n2w9gfxwvb483" data_title="latex-cheetsheet" data_summary="1. Create Table12345678\beg..." class="article-share-link">Share</a>
       
 
       
@@ -119,7 +119,7 @@
 
 	  
 <span>
-Updated:<time datetime="2016-05-18T16:02:08.545Z" itemprop="dateModified">2016-05-19</time>
+Updated:<time datetime="2016-05-18T16:05:25.840Z" itemprop="dateModified">2016-05-19</time>
 </span>
 
 
@@ -161,15 +161,16 @@ Updated:<time datetime="2016-05-18T16:02:08.545Z" itemprop="dateModified">2016-0
     <div class="article-entry" itemprop="articleBody">
       
 		
-        <ol>
-<li>Kill multi threads<br>ps -ef|grep LOCAL=NO|grep -v grep|cut -c 9-15|xargs kill -9</li>
-</ol>
+        <h1 id="1-_Kill_multi_threads"><a href="#1-_Kill_multi_threads" class="headerlink" title="1. Kill multi threads"></a>1. Kill multi threads</h1><p>ps -ef|grep LOCAL=NO|grep -v grep|cut -c 9-15|xargs kill -9</p>
+<h1 id="2-_Install/remove_deb_package"><a href="#2-_Install/remove_deb_package" class="headerlink" title="2. Install/remove deb package"></a>2. Install/remove deb package</h1><h2 id="install_3A"><a href="#install_3A" class="headerlink" title="install:"></a>install:</h2><p>sudo dpkg -i DEB_PACKAGE</p>
+<h2 id="Remove_3A"><a href="#Remove_3A" class="headerlink" title="Remove:"></a>Remove:</h2><p>sudo dpkg -r PACKAGE_NAME</p>
+<p>Reference:<br><a href="http://askubuntu.com/questions/40779/how-do-i-install-a-deb-file-via-the-command-line" target="_blank" rel="external">http://askubuntu.com/questions/40779/how-do-i-install-a-deb-file-via-the-command-line</a></p>
 
       
     </div>
     <footer class="article-footer">
 	  
-	  <a data-url="http://yoursite.com/2016/05/14/ubuntu-cheetsheet/" data-id="ciod241hk0009ym9gxx4e503a" data_title="ubuntu-cheetsheet" data_summary="Kill multi threadsps -ef|gr..." class="article-share-link">Share</a>
+	  <a data-url="http://yoursite.com/2016/05/14/ubuntu-cheetsheet/" data-id="ciod288ai00092w9gfnmp8b5h" data_title="ubuntu-cheetsheet" data_summary="1. Kill multi threadsps -ef..." class="article-share-link">Share</a>
       
 
       
@@ -179,7 +180,7 @@ Updated:<time datetime="2016-05-18T16:02:08.545Z" itemprop="dateModified">2016-0
 
 	  
 <span>
-Updated:<time datetime="2016-05-13T17:32:00.140Z" itemprop="dateModified">2016-05-14</time>
+Updated:<time datetime="2016-05-22T11:05:45.249Z" itemprop="dateModified">2016-05-22</time>
 </span>
 
 
@@ -228,7 +229,7 @@ Updated:<time datetime="2016-05-13T17:32:00.140Z" itemprop="dateModified">2016-0
     </div>
     <footer class="article-footer">
 	  
-	  <a data-url="http://yoursite.com/2016/03/29/ubuntu-fonts/" data-id="ciod241hi0007ym9gkl0j24eb" data_title="ubuntu-fonts" data_summary="How to set Chinese fonts in..." class="article-share-link">Share</a>
+	  <a data-url="http://yoursite.com/2016/03/29/ubuntu-fonts/" data-id="ciod288ag00072w9gu8c8716m" data_title="ubuntu-fonts" data_summary="How to set Chinese fonts in..." class="article-share-link">Share</a>
       
 
       
@@ -289,7 +290,7 @@ Updated:<time datetime="2016-03-29T02:50:33.000Z" itemprop="dateModified">2016-0
     </div>
     <footer class="article-footer">
 	  
-	  <a data-url="http://yoursite.com/2016/03/28/set-primary-monitor/" data-id="ciod241hm000bym9g30v6q59w" data_title="How to set primary monitor in Ubuntu" data_summary="I came across such an issue..." class="article-share-link">Share</a>
+	  <a data-url="http://yoursite.com/2016/03/28/set-primary-monitor/" data-id="ciod288ak000b2w9gtj2sm924" data_title="How to set primary monitor in Ubuntu" data_summary="I came across such an issue..." class="article-share-link">Share</a>
       
 
       
@@ -347,7 +348,7 @@ Updated:<time datetime="2016-03-28T15:05:24.000Z" itemprop="dateModified">2016-0
     </div>
     <footer class="article-footer">
 	  
-	  <a data-url="http://yoursite.com/2016/03/23/ubuntu-terminal-replacement/" data-id="ciod241ha0004ym9gqbkclcr9" data_title="12 alternatives to Ubuntu terminals" data_summary="http://tech.it168.com/a2014..." class="article-share-link">Share</a>
+	  <a data-url="http://yoursite.com/2016/03/23/ubuntu-terminal-replacement/" data-id="ciod288a500042w9g1p1a7iz3" data_title="12 alternatives to Ubuntu terminals" data_summary="http://tech.it168.com/a2014..." class="article-share-link">Share</a>
       
 
       
@@ -410,7 +411,7 @@ Updated:<time datetime="2016-03-23T12:15:10.000Z" itemprop="dateModified">2016-0
     </div>
     <footer class="article-footer">
 	  
-	  <a data-url="http://yoursite.com/2016/03/23/chinese-wine/" data-id="ciod241ic001cym9g9um9fkk3" data_title="Resolve Chinese font display issuse in wine" data_summary="This problem should only oc..." class="article-share-link">Share</a>
+	  <a data-url="http://yoursite.com/2016/03/23/chinese-wine/" data-id="ciod288bb001c2w9gi5zd9ry0" data_title="Resolve Chinese font display issuse in wine" data_summary="This problem should only oc..." class="article-share-link">Share</a>
       
 
       
@@ -475,7 +476,7 @@ Updated:<time datetime="2016-03-23T13:32:35.000Z" itemprop="dateModified">2016-0
     </div>
     <footer class="article-footer">
 	  
-	  <a data-url="http://yoursite.com/2016/03/23/fcitx-linux-crash/" data-id="ciod241i90018ym9g4cfna1he" data_title="Uninstall fcitx leads to linux crash" data_summary="Today, I found the the CPU ..." class="article-share-link">Share</a>
+	  <a data-url="http://yoursite.com/2016/03/23/fcitx-linux-crash/" data-id="ciod288b700182w9gj1464gla" data_title="Uninstall fcitx leads to linux crash" data_summary="Today, I found the the CPU ..." class="article-share-link">Share</a>
       
 
       
@@ -542,7 +543,7 @@ Updated:<time datetime="2016-03-23T10:35:47.000Z" itemprop="dateModified">2016-0
     </div>
     <footer class="article-footer">
 	  
-	  <a data-url="http://yoursite.com/2016/03/23/ocaml-install/" data-id="ciod241hr000gym9g221zaae4" data_title="How to install OCaml and Utop with Opam" data_summary="Installing Ocaml is easy on..." class="article-share-link">Share</a>
+	  <a data-url="http://yoursite.com/2016/03/23/ocaml-install/" data-id="ciod288ap000g2w9gnz7fvd2r" data_title="How to install OCaml and Utop with Opam" data_summary="Installing Ocaml is easy on..." class="article-share-link">Share</a>
       
 
       
@@ -603,7 +604,7 @@ Updated:<time datetime="2016-03-23T10:03:55.000Z" itemprop="dateModified">2016-0
     </div>
     <footer class="article-footer">
 	  
-	  <a data-url="http://yoursite.com/2016/03/22/install-ruby/" data-id="ciod241i4000yym9gu7alo393" data_title="Install Ruby (on Rails), RVM in Ubuntu" data_summary="1. RVMThere are many ways w..." class="article-share-link">Share</a>
+	  <a data-url="http://yoursite.com/2016/03/22/install-ruby/" data-id="ciod288b2000y2w9gwjsv0jdo" data_title="Install Ruby (on Rails), RVM in Ubuntu" data_summary="1. RVMThere are many ways w..." class="article-share-link">Share</a>
       
 
       
@@ -665,7 +666,7 @@ Updated:<time datetime="2016-03-22T11:59:49.000Z" itemprop="dateModified">2016-0
     </div>
     <footer class="article-footer">
 	  
-	  <a data-url="http://yoursite.com/2016/03/22/vmail-config/" data-id="ciod241h30001ym9g603ukbsp" data_title="Set Vim to send and receive Email" data_summary="Using vim to send and recei..." class="article-share-link">Share</a>
+	  <a data-url="http://yoursite.com/2016/03/22/vmail-config/" data-id="ciod2889w00012w9gu87v54zp" data_title="Set Vim to send and receive Email" data_summary="Using vim to send and recei..." class="article-share-link">Share</a>
       
 
       
